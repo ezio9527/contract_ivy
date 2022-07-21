@@ -1,0 +1,71 @@
+// bsc testnet deployment
+deployer address: 0x06c24286D92B4303ac89001F77b493E64daad664
+ivy contract: 0xaa0E2136FE68CDb097373DEF907994fdB074282C
+eIvy contract: 0xdee4c15ff033d5f4df7c0cef2a305fa4510c945b
+
+poolfactory: 
+ivy per block: 6000/120 days = 1736111111111110
+blocks per update: 3456000 (120 days 3% reduction is not used)
+init block: 20033802
+
+core pool: 0x4CeC4Ad137fbD1fa3890e74E7ecF32894fF38098
+init block: 20033802
+weight: 1000
+
+register pool ok
+
+
+pending yield rewards: 574600000000000000
+                      1026000000000000000
+                        24300000000000000
+                         1736111111111110
+0.5746 / 100 = 
+
+bscmainnet
+IVY: 0xB0484A97A135C564157e2778B6a72ecc3EF29D59
+eIVY: 0x510c9ef6F5B7E0d00e285431D1D33214240C8b11
+Pool factory: 0x2d07a0dFb4189e9cAC2D0431Fa60F4Fd15A43a73
+
+
+bscmainnet for test 6-13-2022
+pool factory: 0x98ACC7187E087A079a8d6926aae0b9B577183746
+core pool: 0x867B9D037b9AF69a86e701f25a09d827803E4829
+
+pool token LP: 0xB90b5a0246279244D5002FFD31a89Fe99C16D71a
+reward token: 0x6603e72C7C8AEAd2014D9FD97F55e4bE254009B1
+
+iMac:hardhat-ivy shujunding$ npx hardhat run scripts/deploy2bsctest.js --network bsctestnet
+deployer:  0x06c24286D92B4303ac89001F77b493E64daad664
+investor:  0x752616cD86DCd830c4c059fB2eFcaE5e0Ac88790
+Deploying contracts with the account: 0x06c24286D92B4303ac89001F77b493E64daad664
+Account BNB balance: 20682585009138840
+create new pool token:  0xF491b6a09C37051825fA29083c0dB3256dA3aF4c
+EscrowedIvyERC20 already deployed to: 0xdee4c15ff033d5f4df7c0cef2a305fa4510c945b
+IvyPoolFactory already deployed to: 0xE28DE0AD63c9129658763Df7ebBEC1f293Cfc9Fa
+IvyCorePool already deployed to: 0x4100c79cBE1799a96f99a6652da7378057cE6164
+pool 1 weight : 1000
+total pool weight after register : 1000
+1st pool token reserve after stake : 1000000000000000000
+Deployer num of deposits : 1
+[0]
+  token amount :  1
+  weight :  1000000
+  lock from : 0
+  lock until : 0
+  user 0 staked total token amount :  1
+Investor num of deposits : 0
+  user 1 staked total token amount :  0
+Investor num of deposits : 0
+  user 2 staked total token amount :  0
+  staked total token amount :  1
+  pool token reserve :  1
+user 0 pending yield rewards  0.269097
+user 1 pending yield rewards  0
+user 2 pending yield rewards  0
+pool balance for deployer : 1000000000000000000
+pool balance for investor : 0
+pool balance for acct 2   : 0
+lastYieldDistribution  BigNumber { _hex: '0x0133ecc6', _isBigNumber: true }
+yieldRewardsPerWeight  BigNumber { _hex: '0x0e76cb', _isBigNumber: true }
+weight  1000
+iMac:hardhat-ivy shujunding$ 
